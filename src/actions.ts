@@ -20,7 +20,7 @@ export const addToCart = (prevState:{
     if (itemName === "shoes") {
       return {
         success: true,
-        message:"",
+        message:`Item :${itemName} added to cart.`,
         cartSize: 12,
       };
     } else {

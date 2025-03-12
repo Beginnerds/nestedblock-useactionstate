@@ -27,7 +27,7 @@ const AddToCartForm = () => {
         Add To Cart
       </button>
     </div>
-    {formState.success  && <p className="mt-2">Item added to cart.</p>}
+    {formState.success && formState.message  && <p className="mt-2">{formState.message}</p>}
     {!formState.success && formState.message && <p className="mt-2">{formState.message}</p>}
   </form>
   )
